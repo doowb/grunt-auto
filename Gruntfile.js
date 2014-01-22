@@ -29,24 +29,36 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    auto: {
-      default_options: {
-        options: {
-        },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!',
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
-    },
+    // auto: {
+    //   default_options: {
+    //     options: {
+    //     },
+    //     files: {
+    //       'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123'],
+    //     },
+    //   },
+    //   custom_options: {
+    //     options: {
+    //       separator: ': ',
+    //       punctuation: ' !!!',
+    //     },
+    //     files: {
+    //       'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123'],
+    //     },
+    //   },
+    // },
+
+    // auto: {
+    //   custom_options: {
+    //     options: {
+    //       separator: ' - ',
+    //       punctuation: ' !?!?'
+    //     },
+    //     files: {
+    //       'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+    //     }
+    //   }
+    // },
 
     // Unit tests.
     nodeunit: {
